@@ -12,7 +12,7 @@
 -- NAME      : CTcpClient::CTcpClient
 -- PURPOSE   : Constructor for Class
 -- PARAMETER : Interger for port number
--- AUTHOR    : Ruchi on 25.12.2023
+
 ---------------------------------------------------------*/
 CTcpClient::CTcpClient(int nPort)
 {
@@ -37,7 +37,6 @@ CTcpClient::CTcpClient(int nPort)
 -- NAME      : CTcpClient::CTcpClient
 -- PURPOSE   : Destructor for Class
 -- PARAMETER : NA
--- AUTHOR    : Ruchi on 25.12.2023
 ---------------------------------------------------------*/
 CTcpClient::~CTcpClient()
 {
@@ -53,7 +52,6 @@ CTcpClient::~CTcpClient()
 -- PURPOSE   : Establishing a connection to a server using the provided 
 			   server address and port number.
 -- PARAMETER : char pointer of server address
--- AUTHOR    : Ruchi on 25.12.2023
 ------------------------------------------------------------------------*/
 bool CTcpClient::Connect(const char* pszServerAddress) 
 {
@@ -88,7 +86,6 @@ bool CTcpClient::Connect(const char* pszServerAddress)
 -- NAME      : CTcpClient::CTcpClient
 -- PURPOSE   : Responsible for sending a file to the connected server.
 -- PARAMETER : char pointer of file name
--- AUTHOR    : Ruchi on 25.12.2023
 ----------------------------------------------------------------------*/
 bool CTcpClient::SendFile(const char* pszFileName) 
 {
@@ -123,7 +120,6 @@ bool CTcpClient::SendFile(const char* pszFileName)
 -- PURPOSE   : Responsible for receiving the result of a 
 			   binary operation from the connected server.
 -- PARAMETER : NA
--- AUTHOR    : Ruchi on 25.12.2023
 ------------------------------------------------------------*/
 void CTcpClient::ReceiveResult() 
 {
