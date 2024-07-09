@@ -12,7 +12,7 @@ int main()
         return 1;
     }
 
-    tcpClient.SendFile("E:\\Synergy program\\test.txt");
+    tcpClient.SendFile("E:\\ program\\test.txt");
     tcpClient.ReceiveResult();
 
     system("pause");
